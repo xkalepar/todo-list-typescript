@@ -54,8 +54,10 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
+```
 This project is licensed under the MIT License.
 
 ```
+## Live Demo
 
-```
+Check out the live demo of the ToDo app [here](https://awesome-todo-list-nkq0.onrender.com).

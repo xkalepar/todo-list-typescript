@@ -17,18 +17,15 @@ This is a simple ToDo app built with Vanilla TypeScript and Vite.
    ```
 
 2. Navigate to the project directory:
-   cd todo-app
 
    ```
-
+   cd todo-app
    ```
 
 3. Install the dependencies:
 
-   npm install
-
    ```
-
+   npm install
    ```
 
 ## Usage

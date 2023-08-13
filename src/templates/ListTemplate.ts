@@ -50,7 +50,23 @@ export default class ListTemplate implements DOMList {
         fullList.removeItem(item.id);
         this.render(fullList);
       });
-      this.ul.append(li);
+      const span = document.createElement("span") as HTMLSpanElement;
+      const date = new Date();
+      let hours = date.getHours();
+      const minutes = date.getMinutes();
+
+      let period = "AM";
+      if (hours >= 12) {
+        period = "PM";
+        if (hours > 12) {
+          hours -= 12;
+        }
+      }
+
+      const formattedDate = `${hours}: ${minutes}${period}`;
+      span.textContent = formattedDate;
+      li.append(span);
+      this.ul.prepend(li);
     });
   }
 }
